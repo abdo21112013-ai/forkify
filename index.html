@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forkify Recipes Recipes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+
+    <header>
+      <h1>Forkify Recipes</h1>
+      <p>
+        Choose a category to discover the best recipes from around the world
+      </p>
+
+      <!-- Search buttons to change API query -->
+      <div class="search-buttons">
+        <button class="btn-search" id="Pizza">Pizza</button>
+        <button class="btn-search" id="Burger">Burger</button>
+        <button class="btn-search" id="Pasta">Pasta</button>
+        <button class="btn-search" id="Salad">Salad</button>
+        <button class="btn-search" onclick="fetchRecipes('chicken', this)">
+          Chicken
+        </button>
+      </div>
+      <div class="search-container">
+        <input id="input-search" type="search" />
+        <button id="search" class="btn-search">search</button>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+      <div class="recipes-grid" id="recipesContainer"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
